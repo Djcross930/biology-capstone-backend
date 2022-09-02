@@ -1,1 +1,5 @@
 GET http://localhost:3000/genes
+
+###
+
+GET http://localhost:3000/genes/1

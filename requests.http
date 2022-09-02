@@ -3,3 +3,11 @@ GET http://localhost:3000/genes
 ###
 
 GET http://localhost:3000/genes/1
+
+###
+POST http://localhost:3000/genes
+Content-Type: application/json
+
+{
+  "common_name": "TP53"
+}

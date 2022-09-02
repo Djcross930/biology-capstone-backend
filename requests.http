@@ -1,3 +1,4 @@
+#eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
 ### GENE INDEX
 GET http://localhost:3000/genes
 
@@ -7,6 +8,7 @@ GET http://localhost:3000/genes/1
 
 ### GENE CREATE
 POST http://localhost:3000/genes
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
 Content-Type: application/json
 
 {
@@ -17,8 +19,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Dan",
+  "email": "dan@dan.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -28,6 +30,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "dan@dan.com",
   "password": "password"
 }

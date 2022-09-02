@@ -52,4 +52,8 @@ class Gene < ApplicationRecord
   def t_content
     return a_content()
   end
+
+  def g_c_content
+    return (c_content() * 2)
+  end
 end

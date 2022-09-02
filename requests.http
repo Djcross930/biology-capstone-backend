@@ -4,7 +4,7 @@ GET http://localhost:3000/genes
 
 ### GENE SHOW
 
-GET http://localhost:3000/genes/1
+GET http://localhost:3000/genes/1.json
 
 ### GENE CREATE
 POST http://localhost:3000/genes

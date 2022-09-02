@@ -1,0 +1,9 @@
+{
+  id: @gene.id,
+  ens_id: @gene.ens_id,
+  common_name: @gene.common_name,
+  cds_sequence: @gene.cds_sequence,
+  g_c_content: @gene.g_c_content,
+  created_at: @gene.created_at,
+  updated_at: @gene.updated_at
+}

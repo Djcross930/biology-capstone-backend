@@ -6,8 +6,8 @@ class GenesController < ApplicationController
   end
 
   def show
-    gene = Gene.find_by(id: params[:id])
-    render json: gene.as_json
+    @gene = Gene.find_by(id: params[:id])
+    render template: "genes/show"
   end
 
   def create

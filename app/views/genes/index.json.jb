@@ -1,0 +1,6 @@
+@genes.map do |gene|
+  {
+    id: gene.id,
+    url: gene_url(gene, format: :json)
+  }
+end

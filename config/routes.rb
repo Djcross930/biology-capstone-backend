@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get "/genes" => "genes#index"
   get "/genes/:id" => "genes#show"
   post "/genes" => "genes#create"
+  post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 end

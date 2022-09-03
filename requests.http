@@ -8,7 +8,7 @@ GET http://localhost:3000/genes/1.json
 
 ### GENE CREATE
 POST http://localhost:3000/genes.json
-# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
 Content-Type: application/json
 
 {

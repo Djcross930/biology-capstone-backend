@@ -1,18 +1,18 @@
-#eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
+#eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0NDIzNzR9.zcEo32rGBvdV_99Kf2K3j7iUQmwB0FrQoWG_EnsLtAw
 ### GENE INDEX
-GET http://localhost:3000/genes
-
+GET http://localhost:3000/genes.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0NDMwMDZ9.lrEEE8d6mB8gn7Ko30HkAGBHGOiq3PbL7A5LSfXFqnM
 ### GENE SHOW
 
-GET http://localhost:3000/genes/1.json
+GET http://localhost:3000/genes/3.json
 
 ### GENE CREATE
 POST http://localhost:3000/genes.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIyMjcyNjV9.NxedWb-KQO9hk22-NMUvPE2i1MScyQFAROmsXDi1CKo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0MjAzMzd9.T5lxCeHJ0wOkKKK3-VrfCP1nlyZyUFGoFS3L0xpyMOI
 Content-Type: application/json
 
 {
-  "common_name": "TP53"
+  "common_name": "EGFR"
 }
 ### Users create (signup)
 POST http://localhost:3000/users.json

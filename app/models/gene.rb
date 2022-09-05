@@ -171,7 +171,7 @@ class Gene < ApplicationRecord
         switch = 1
       end
     end
-    return protein
+    return protein.join
   end
 
 

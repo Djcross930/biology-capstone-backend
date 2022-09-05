@@ -1,8 +1,13 @@
 class GenesController < ApplicationController
   require 'http'
   def index
-    genes = Gene.all
-    render json: genes.as_json
+    if current_user
+      @genes = Gene.where(user_id: current_user.id)
+      render template: "genes/index"
+    else
+      genes = Gene.all
+      render json: genes.as_json
+    end
   end
 
   def show
@@ -21,7 +26,7 @@ class GenesController < ApplicationController
       gene.cds_sequence = info_one
       gene.user_id = current_user.id
       gene.save
-      render json: gene.as_json
+      render template: "genes/show"
     else
       @gene = Gene.new
       @gene.common_name = params[:common_name]

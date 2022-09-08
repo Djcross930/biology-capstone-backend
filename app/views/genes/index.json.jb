@@ -5,6 +5,7 @@
     common_name: gene.common_name,
     cds_sequence: gene.cds_sequence,
     g_c_content: gene.g_c_content,
+    a_t_content: gene.a_t_content,
     amino_acid_sequence: gene.amino_acid_sequence,
     created_at: gene.created_at,
     updated_at: gene.updated_at

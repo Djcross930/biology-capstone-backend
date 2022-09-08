@@ -36,7 +36,7 @@ class Gene < ApplicationRecord
     c = sequence.count("C")
     c = c.to_f
     total = sequence.length.to_f
-    c_ratio = (c / total)
+    c_ratio = (c / total) * 100
     return c_ratio.to_f 
   end
 
@@ -44,7 +44,7 @@ class Gene < ApplicationRecord
     return c_content()
   end
   def a_content
-    total = (1 - (c_content() * 2))
+    total = 100 - c_content()
     g = (total / 2)
     return g
   end
@@ -54,7 +54,11 @@ class Gene < ApplicationRecord
   end
 
   def g_c_content
-    return (c_content() * 2)
+    return (c_content() * 2).round(2)
+  end
+  
+  def a_t_content
+    return (100 - g_c_content()).round(2)
   end
 
   def amino_acid_sequence

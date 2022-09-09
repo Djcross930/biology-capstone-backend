@@ -6,7 +6,12 @@ class Gene < ApplicationRecord
     start_codon << sequence[0]
     start_codon << sequence[1]
     start_codon << sequence[2]
-    return start_codon
+    start_codon = start_codon.join
+    if start_codon == "ATG"
+      return "ATG"
+    else
+      return "Optional Upstream Start Codon:" + " " + start_codon
+    end
   end
 
   def stop_codon
@@ -15,7 +20,7 @@ class Gene < ApplicationRecord
     stop_codon.unshift(sequence[-1])
     stop_codon.unshift(sequence[-2])
     stop_codon.unshift(sequence[-3])
-    return stop_codon
+    return stop_codon.join
   end
 
   def mrna_sequence

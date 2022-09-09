@@ -5,6 +5,8 @@
   cds_sequence: @gene.cds_sequence,
   g_c_content: @gene.g_c_content,
   a_t_content: @gene.a_t_content,
+  start_codon: @gene.start_codon,
+  stop_codon: @gene.stop_codon,
   mrna_sequence: @gene.mrna_sequence,
   amino_acid_sequence: @gene.amino_acid_sequence,
   created_at: @gene.created_at,

@@ -28,7 +28,7 @@ class Gene < ApplicationRecord
         rna_sequence << base
       end
     end
-    return rna_sequence
+    return rna_sequence.join
   end
 
   def c_content

@@ -1,7 +1,7 @@
 #eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0NDIzNzR9.zcEo32rGBvdV_99Kf2K3j7iUQmwB0FrQoWG_EnsLtAw
 ### GENE INDEX
 GET http://localhost:3000/genes.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI0NDMwMDZ9.lrEEE8d6mB8gn7Ko30HkAGBHGOiq3PbL7A5LSfXFqnM
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjMyNjQ5MDN9.cu3dDIaIeACkg4LCXhoyMyqxLa9ZR95ZspFo9M6Divg
 ### GENE SHOW
 
 GET http://localhost:3000/genes/3.json

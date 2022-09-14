@@ -2,11 +2,19 @@ class GenesController < ApplicationController
   require 'http'
   def index
     if current_user
-      @genes = Gene.where(user_id: current_user.id)
+      user_genes = []
+      @genes = ActiveRecord::Base.connection.execute("SELECT DISTINCT ON (common_name) common_name, id, user_id FROM genes;")
+      @genes.each do |gene|
+        if gene["user_id"] == current_user.id
+          user_genes << gene
+        else
+        end
+      end
       render template: "genes/index"
-    else
-      genes = Gene.all
-      render json: genes.as_json
+      # render template: "genes/index"
+    # else
+    #   genes = Gene.all
+    #   render json: genes.as_json
     end
   end
 
